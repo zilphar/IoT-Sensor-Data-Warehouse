@@ -85,7 +85,7 @@ Scaling the model to multi-building or real-time IoT streaming data with Azure S
 
 Table names, view and stored procedure in the data warehouse 
 
-![Screenshot (1825)](https://github.com/user-attachments/assets/401da233-d853-4a7c-9aba-24dc4b7832d2)
+![image](https://github.com/user-attachments/assets/ab594998-533c-4aa4-9f1f-be74c0f534b4)
 
 
 Star Schema (table interconnection)
