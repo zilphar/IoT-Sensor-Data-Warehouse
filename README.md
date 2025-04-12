@@ -38,7 +38,7 @@ This view joins all relevant dimension tables with the fact table, providing a e
 #### 2. Stored Procedure: sp_sensorreadings
 A procedure was created to:
 
-a. Compare live sensor readings with dynamic thresholds stored in a ThresholdLookup table (I created a threshold table sensorthreshold to hold the threshold values for several senors)
+a. Compare live sensor readings with dynamic thresholds stored in a ThresholdLookup table (I created a threshold table sensorthreshold to hold the threshold values for several sensors)
 
 b. Label each reading as Normal, Abnormal Low, or Abnormal High depending on each values position from the min and max threshold.
 
