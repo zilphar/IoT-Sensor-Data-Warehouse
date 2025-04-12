@@ -31,23 +31,23 @@ Manual inserts were used to simulate the ETL process:
 
 The fact table was populated with realistic sample readings across different sensors and times, each associated with a project and timestamp.
 
-### Views & Stored Procedures
+### Views and Stored Procedures
 #### 1. View: sensorreadings
-This view joins all relevant dimension tables with the fact table, providing a flat structure to simplify analytics.
+This view joins all relevant dimension tables with the fact table, providing a easily readable dataset.
 
 #### 2. Stored Procedure: sp_sensorreadings
 A procedure was created to:
 
-a. Compare live sensor readings with dynamic thresholds stored in a ThresholdLookup table.
+a. Compare live sensor readings with dynamic thresholds stored in a ThresholdLookup table (I created a threshold table sensorthreshold to hold the threshold values for several senors)
 
-b. Label each reading as Normal, Abnormal Low, or Abnormal High.
+b. Label each reading as Normal, Abnormal Low, or Abnormal High depending on each values position from the min and max threshold.
 
-c. Automate anomaly detection logic to be used in monitoring dashboards or alerting systems.
+c. Automate anomaly detection logic to be used in alerting systems or monitoring dashboards.
 
 ### Analysis Features
 This project demonstrates:
 
-1. Time-series data storage and dimension modeling.
+1. Time-series data storage and dimension modeling using star schema.
 
 2. Threshold-based anomaly detection via SQL logic.
 
