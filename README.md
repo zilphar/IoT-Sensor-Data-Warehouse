@@ -5,7 +5,7 @@
 This project showcases a simplified yet powerful IoT-based data warehouse design for monitoring sensor data from a single building floor. The goal was to simulate a real-world data flow involving time-series sensor data, analyze it for abnormal behavior, and enable reporting through Power BI or SQL queries.
 
 ****<ins>Data Warehouse Design</ins>****
-# 1. Schema Creation
+##### 1. Schema Creation
 
 A dedicated schema dataschema was created to organize the project-specific tables.
 
