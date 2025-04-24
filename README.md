@@ -77,6 +77,7 @@ This project demonstrates:
 7. GitHub Documentation for Technical Projects
 
 ****<ins> Next Steps</ins>****
+
 For future improvements, this project can be extended by:
 
 Automating ETL using tools like SSIS.
