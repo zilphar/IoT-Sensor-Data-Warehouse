@@ -1,6 +1,6 @@
 # IoT-Sensor-Data-Warehouse
 
-### Project Overview
+****<ins>Project Overview</ins>****
 
 This project showcases a simplified yet powerful IoT-based data warehouse design for monitoring sensor data from a single building floor. The goal was to simulate a real-world data flow involving time-series sensor data, analyze it for abnormal behavior, and enable reporting through Power BI or SQL queries.
 
