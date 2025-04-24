@@ -4,12 +4,12 @@
 
 This project showcases a simplified yet powerful IoT-based data warehouse design for monitoring sensor data from a single building floor. The goal was to simulate a real-world data flow involving time-series sensor data, analyze it for abnormal behavior, and enable reporting through Power BI or SQL queries.
 
-### Data Warehouse Design
-#### 1. Schema Creation
+****<ins>Data Warehouse Design</ins>****
+# 1. Schema Creation
 
 A dedicated schema dataschema was created to organize the project-specific tables.
 
-#### 2. Dimension Tables
+# 2. Dimension Tables
 
 Three dimension tables created to store descriptive attributes:
 
@@ -19,23 +19,23 @@ DimSensor: Stores info about installed sensors (e.g., temperature, humidity, mot
 
 DimTime: A time dimension table capturing different time granularities for time-series analysis.
 
-#### 3. Fact Table
+# 3. Fact Table
 FactSensorReadings: Central fact table storing actual sensor readings, timestamped and linked to the dimension tables. 
 
 The whole structure supports a star schema model, optimized for efficient analytical querying.
 
-### ETL Simulation
+****<ins> ETL Simulation</ins>****
 Manual inserts were used to simulate the ETL process:
 
 17 records were inserted into each dimension table.
 
 The fact table was populated with realistic sample readings across different sensors and times, each associated with a project and timestamp.
 
-### Views and Stored Procedures
-#### 1. View: sensorreadings
+****<ins> Views and Stored Procedures</ins>****
+# 1. View: sensorreadings
 This view joins all relevant dimension tables with the fact table, providing a easily readable dataset.
 
-#### 2. Stored Procedure: sp_sensorreadings
+# 2. Stored Procedure: sp_sensorreadings
 A procedure was created to:
 
 a. Compare live sensor readings with dynamic thresholds stored in a ThresholdLookup table (I created a threshold table sensorthreshold to hold the threshold values for several sensors)
@@ -44,7 +44,7 @@ b. Label each reading as Normal, Abnormal Low, or Abnormal High depending on eac
 
 c. Automate anomaly detection logic to be used in alerting systems or monitoring dashboards.
 
-### Analysis Features
+****<ins>Analysis Features</ins>****
 This project demonstrates:
 
 1. Time-series data storage and dimension modeling using star schema.
@@ -55,7 +55,7 @@ This project demonstrates:
 
 4. Use of IDENTITY keys and FOREIGN KEY constraints to enforce relational integrity.
 
-### Key Learning & Skills Demonstrated
+****<ins> Key Learning & Skills Demonstrated</ins>****
 1. Data Warehouse Design (Star Schema)
 
 2. Dimension/Fact Table Structuring
@@ -70,7 +70,7 @@ This project demonstrates:
 
 7. GitHub Documentation for Technical Projects
 
-### Next Steps
+****<ins> Next Steps</ins>****
 For future improvements, this project can be extended by:
 
 Automating ETL using tools like SSIS.
@@ -81,7 +81,7 @@ Scheduling stored procedures via SQL Agent.
 
 Scaling the model to multi-building or real-time IoT streaming data with Azure SQL or BigQuery.
 
-### Below are important screenshots from the project: 
+****<ins> Below are important screenshots from the project:</ins>****
 
 Table names, view and stored procedure in the data warehouse 
 
